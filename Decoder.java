@@ -27,7 +27,7 @@ public class Decoder {
     public void add(String[] line) {
         pairsCount++;
         indexes.add(Integer.parseInt(line[0]));
-        chars.add(Byte.parseByte(line[1]));
+        chars.add((byte) line[1].charAt(0));
     }
 
     /**
